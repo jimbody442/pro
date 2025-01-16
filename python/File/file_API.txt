@@ -1,0 +1,29 @@
+파이썬에서 제공하는 대표 파일 API들
+
+open() : 파일 열기, 파일 객체 생성
+file.close() : 파일 닫기
+file.read () :파일로부터 데이터 읽기
+file.write() : 파일에 데이터 쓰기
+file.tell() : 파일의 커서 위치 리턴
+
+f= open('todo.text','wt') #파일을 연다
+type(f) #<todo.txt 파일의 type을 출력
+
+ex)   open(file, mode ='r', buffering =-1, encoding = None, errors =None, newline = None, closefd =True, opener =None)
+
+파일경로 
+-절대경로 /User/jimin/todo.txt
+         ~/todo.txt
+
+-상대경로 todo/txt
+        ./todo.txt
+        ../todo.txt
+
+
+r : 파일을 읽기 위해서 연다
+w : 파일에 데이터를 쓰기 위해서 연다
+x : 새로운 파일을 생성, 파일이 기존에 있으면 예외 발생
+a : 파일 뒷부분에 데이터 추가를 위해 파일을 연다
+b : 파일을 바이너리 데이터로 본다
+t : 파일을 텍스트 데이터로 본다
++ : 기존 파일 업데이트를 위해 파일을 연다.

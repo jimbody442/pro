@@ -1,0 +1,13 @@
+json은 파이썬의 모든 자료구조를 표현 x
+따라서 json으로 표현할 수 있는 자료 구조는 다음과 같다.
+-python------json
+
+-dict-------object
+-list,tuple--array
+-str-------string
+-int ------number(int)
+-float ---- number(real)
+-True ------ true
+-False-------false
+-None ------- null
+
